@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IronPulse Fitness | Train Stronger</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWix+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkR4j8zJv3q5f7F7fYB9fNQ8NnN9+8+9g0wA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header" id="home">
+      <nav class="navbar container">
+        <a href="#home" class="logo">Iron<span>Pulse</span></a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#programs">Programs</a></li>
+          <li><a href="#trainers">Trainers</a></li>
+          <li><a href="#plans">Plans</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <section class="hero container reveal">
+        <div>
+          <p class="hero-tag">Transform Your Body, Upgrade Your Life</p>
+          <h1>Push Limits. Build Strength. Become Unstoppable.</h1>
+          <p>
+            Premium coaching, high-performance equipment, and a motivating fitness
+            community built to help you reach your goals.
+          </p>
+          <a href="#plans" class="btn">Join Now</a>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="stats container reveal" aria-label="Gym statistics">
+        <article><h3 class="counter" data-target="3000">0</h3><p>Active Members</p></article>
+        <article><h3 class="counter" data-target="12">0</h3><p>Years Experience</p></article>
+        <article><h3 class="counter" data-target="80">0</h3><p>Classes / Week</p></article>
+      </section>
+
+      <section id="about" class="section container reveal">
+        <h2>About Our Gym</h2>
+        <p>
+          At IronPulse Fitness, we combine science-backed training programs,
+          elite trainers, and an empowering environment to help people of every
+          fitness level thrive.
+        </p>
+      </section>
+
+      <section id="programs" class="section container reveal">
+        <h2>Programs & Classes</h2>
+        <div class="grid cards-4">
+          <article class="card"><h3>Strength Training</h3><p>Build muscle with guided resistance programs and lifting sessions.</p></article>
+          <article class="card"><h3>Cardio Burn</h3><p>Improve endurance with HIIT, cycling, and treadmill circuits.</p></article>
+          <article class="card"><h3>Yoga Flow</h3><p>Enhance mobility, recovery, and mental focus with expert-led yoga.</p></article>
+          <article class="card"><h3>CrossFit</h3><p>Power-packed functional workouts to improve total body performance.</p></article>
+        </div>
+      </section>
+
+      <section id="trainers" class="section container reveal">
+        <h2>Meet Our Trainers</h2>
+        <div class="grid cards-3 trainers">
+          <article class="trainer-card">
+            <img src="https://images.unsplash.com/photo-1549476464-37392f717541?auto=format&fit=crop&w=600&q=80" alt="Trainer Alex" />
+            <h3>Alex Carter</h3>
+            <p>Strength specialist focused on muscle gain and performance.</p>
+          </article>
+          <article class="trainer-card">
+            <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=600&q=80" alt="Trainer Maya" />
+            <h3>Maya Brooks</h3>
+            <p>Cardio and fat-loss coach with high-energy workout sessions.</p>
+          </article>
+          <article class="trainer-card">
+            <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=600&q=80" alt="Trainer Daniel" />
+            <h3>Daniel Cruz</h3>
+            <p>CrossFit and mobility trainer helping members train smarter.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="plans" class="section container reveal">
+        <h2>Membership Plans</h2>
+        <div class="grid cards-3">
+          <article class="pricing-card"><h3>Starter</h3><p class="price">$29<span>/month</span></p><ul><li>Gym Access</li><li>2 Group Classes</li><li>Locker Access</li></ul></article>
+          <article class="pricing-card featured"><h3>Pro</h3><p class="price">$59<span>/month</span></p><ul><li>Unlimited Classes</li><li>Personalized Plan</li><li>Nutrition Guide</li></ul></article>
+          <article class="pricing-card"><h3>Elite</h3><p class="price">$99<span>/month</span></p><ul><li>1-on-1 Coaching</li><li>Priority Support</li><li>Recovery Sessions</li></ul></article>
+        </div>
+
+        <form id="signupForm" class="signup-form" novalidate>
+          <h3>Sign Up for Membership</h3>
+          <div class="form-grid">
+            <input type="text" id="name" placeholder="Full Name" required />
+            <input type="email" id="email" placeholder="Email" required />
+            <input type="tel" id="phone" placeholder="Phone" required />
+            <select id="plan" required>
+              <option value="">Choose Plan</option>
+              <option value="Starter">Starter</option>
+              <option value="Pro">Pro</option>
+              <option value="Elite">Elite</option>
+            </select>
+          </div>
+          <button type="submit" class="btn">Submit</button>
+          <p id="formMessage" class="form-message" aria-live="polite"></p>
+        </form>
+      </section>
+
+      <section class="section container reveal" id="gallery">
+        <h2>Transformation Gallery</h2>
+        <div class="grid cards-4 gallery">
+          <img src="https://images.unsplash.com/photo-1517960413843-0aee8e2b3285?auto=format&fit=crop&w=500&q=80" alt="Before and after transformation 1" />
+          <img src="https://images.unsplash.com/photo-1534367610401-9f5ed68180aa?auto=format&fit=crop&w=500&q=80" alt="Before and after transformation 2" />
+          <img src="https://images.unsplash.com/photo-1574680178050-55c6a6a96e0a?auto=format&fit=crop&w=500&q=80" alt="Before and after transformation 3" />
+          <img src="https://images.unsplash.com/photo-1577221084712-45b0445d2b00?auto=format&fit=crop&w=500&q=80" alt="Before and after transformation 4" />
+        </div>
+      </section>
+
+      <section class="section container reveal" id="testimonials">
+        <h2>What Members Say</h2>
+        <div class="grid cards-3">
+          <blockquote class="card">“I lost 12kg in 5 months with amazing coaching.” <cite>— Sarah M.</cite></blockquote>
+          <blockquote class="card">“The trainers and community keep me motivated every day.” <cite>— Kevin R.</cite></blockquote>
+          <blockquote class="card">“Best gym experience I’ve had. Highly recommended!” <cite>— Aisha K.</cite></blockquote>
+        </div>
+      </section>
+
+      <section id="contact" class="section container reveal">
+        <h2>Contact Us</h2>
+        <div class="contact-layout">
+          <div>
+            <p><strong>Address:</strong> 123 Fitness Avenue, New York, NY</p>
+            <p><strong>Phone:</strong> +1 (555) 123-4567</p>
+            <p><strong>Email:</strong> hello@ironpulse.com</p>
+          </div>
+          <iframe
+            title="Gym location on map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.9534225002403!2d-73.98969962352695!3d40.74205423555896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a91ebf1a75%3A0xd8f2e6b6f5b0f5c8!2sMadison%20Square%20Park!5e0!3m2!1sen!2sus!4v1716611111111!5m2!1sen!2sus"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2026 IronPulse Fitness. All rights reserved.</p>
+      <div class="socials">
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
